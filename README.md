@@ -46,7 +46,7 @@ Then add the following line just **before** "exit 0":
 python /home/pi/shutdown-with-hold.py
 ```
 
-Reboot the Raspberry Pi.
+Save and reboot the Raspberry Pi.
 
 To test, when the Raspberry Pi on fully booted, touch GPIO 21 to ground for 6 secondes and the Raspberry Pi should start halting.
 
