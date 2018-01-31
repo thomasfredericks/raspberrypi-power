@@ -57,7 +57,7 @@ Source: https://github.com/TonyLHansen/raspberry-pi-safe-off-switch/ by https://
 
 ![Raspberry Pi 3 Boot Circuit](raspberry_pi_boot.png?raw=true "Raspberry Pi 3 Boot Circuit")
 
-Short pin 5  (GPIO3) to pin 6 (GND) together will wake the Pi up from a halt state.
+No script in necessary for this behavior. It is built in. Short pin 5  (GPIO3) to pin 6 (GND) together will wake the Pi up from a halt state.
 
 An easy way to test this is to shutdown the Pi with sudo shutdown -h now, and connect pins 5 and 6 with a female to female cable. You only need to short them momentarily. Then you should find that the Pi will "awake".
 
