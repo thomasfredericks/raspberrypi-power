@@ -9,7 +9,7 @@ Table of contents:
 
 ## Halting the Raspberry Pi 3
 
-![Raspberry Pi 3 Halt Circuit](raspberry_pi_halt.png?raw=true "Title")
+![Raspberry Pi 3 Halt Circuit](raspberry_pi_halt.png?raw=true "Raspberry Pi 3 Halt Circuit")
 
 Install "gpio-zero" for "Python 2":
 ```
@@ -50,7 +50,7 @@ Source: https://github.com/TonyLHansen/raspberry-pi-safe-off-switch/ by https://
 
 ## Turn on the Raspberry Pi 3 after halting it
 
-![Raspberry Pi 3 Boot Circuit](raspberry_pi_boot.png?raw=true "Title")
+![Raspberry Pi 3 Boot Circuit](raspberry_pi_boot.png?raw=true "Raspberry Pi 3 Boot Circuit")
 
 Short pin 5  (GPIO3) to pin 6 (GND) together will wake the Pi up from a halt state.
 
@@ -60,6 +60,12 @@ Source: https://howchoo.com/g/mwnlytk3zmm/how-to-add-a-power-button-to-your-rasp
 
 ## PowerBoost 1000C UPS: Safely halt Raspberry Pi when power supply is interrupted or disconnected
 
+This solution uses an Adafruit PowerBoost 1000C as a UPS for the Raspberry Pi. If the supply power is interrupted, the Raspberry Pi halts automatically with battery power. 
+
+![Raspberry Pi 3 UPS Halt on Power Loss](raspberry_pi_ups_halt_low_battery_bb.png?raw=true "Raspberry Pi 3 UPS Halt on Power Loss")
+
+## PowerBoost 1000C UPS: Safely halt Raspberry Pi when battery is low
+
 This solution uses an Adafruit PowerBoost 1000C as a UPS for the Raspberry Pi. If the supply power is interrupted, the Raspberry Pi is powered by the battery and halts automatically. 
 
-
+![Raspberry Pi 3 UPS Halt on Low Battery](raspberry_pi_ups_halt_low_battery_bb.png?raw=true "Raspberry Pi 3 UPS Halt on Low Battery")
