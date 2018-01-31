@@ -8,6 +8,8 @@ Table of contents:
 
 ## Halting the Raspberry Pi 3
 
+![Raspberry Pi 3 Halt Circuit](raspberry_pi_halt.png?raw=true "Title")
+
 Install "gpio-zero" for "Python 2":
 ```
 sudo apt update
@@ -46,6 +48,8 @@ To test, when the Raspberry Pi on fully booted, touch GPIO 21 to ground for 5 se
 Source: https://github.com/TonyLHansen/raspberry-pi-safe-off-switch/ by https://github.com/TonyLHansen
 
 ## Turn on the Raspberry Pi 3 after halting it
+
+![Raspberry Pi 3 Boot Circuit](raspberry_pi_boot.png?raw=true "Title")
 
 Short pin 5  (GPIO3) to pin 6 (GND) together will wake the Pi up from a halt state.
 
