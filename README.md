@@ -62,7 +62,7 @@ Source: https://howchoo.com/g/mwnlytk3zmm/how-to-add-a-power-button-to-your-rasp
 
 This solution uses an Adafruit PowerBoost 1000C as a UPS for the Raspberry Pi and the "Halting the Raspberry Pi 3 Script". If the supply power is interrupted, the Raspberry Pi halts automatically with battery power. 
 
-![Raspberry Pi 3 UPS Halt on Power Loss](raspberry_pi_ups_halt_low_battery_bb.png?raw=true "Raspberry Pi 3 UPS Halt on Power Loss")
+![Raspberry Pi 3 UPS Halt on Power Loss](raspberry_pi_ups_halt_power_loss_bb.png?raw=true "Raspberry Pi 3 UPS Halt on Power Loss")
 
 ## PowerBoost 1000C UPS: Safely halt Raspberry Pi when battery is low
 
