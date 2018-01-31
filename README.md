@@ -4,8 +4,10 @@ How to turn off and on the Raspberry Pi with buttons and how to use a cheap UPS 
 
 Table of contents:
 1. How to halt (i.e. shutdown) the Raspberry Pi.
-1. How to turn on the Raspberry Pi after halting it.
-1. PowerBoost 1000C UPS: Safely halt Raspberry Pi when power supply is interrupted or disconnected
+2. How to turn on the Raspberry Pi after halting it.
+3. Raspberry Pi 3 safe off/on button
+4. PowerBoost 1000C UPS: Safely halt Raspberry Pi when power supply is interrupted or disconnected
+5. PowerBoost 1000C UPS: Safely halt Raspberry Pi when battery is low
 
 ## Halting the Raspberry Pi 3 Script
 
