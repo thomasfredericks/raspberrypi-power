@@ -7,7 +7,7 @@ Table of contents:
 1. How to turn on the Raspberry Pi after halting it.
 1. PowerBoost 1000C UPS: Safely halt Raspberry Pi when power supply is interrupted or disconnected
 
-## Halting the Raspberry Pi 3
+## Halting the Raspberry Pi 3 Script
 
 ![Raspberry Pi 3 Halt Circuit](raspberry_pi_halt.png?raw=true "Raspberry Pi 3 Halt Circuit")
 
@@ -60,12 +60,12 @@ Source: https://howchoo.com/g/mwnlytk3zmm/how-to-add-a-power-button-to-your-rasp
 
 ## PowerBoost 1000C UPS: Safely halt Raspberry Pi when power supply is interrupted or disconnected
 
-This solution uses an Adafruit PowerBoost 1000C as a UPS for the Raspberry Pi. If the supply power is interrupted, the Raspberry Pi halts automatically with battery power. 
+This solution uses an Adafruit PowerBoost 1000C as a UPS for the Raspberry Pi and the "Halting the Raspberry Pi 3 Script". If the supply power is interrupted, the Raspberry Pi halts automatically with battery power. 
 
 ![Raspberry Pi 3 UPS Halt on Power Loss](raspberry_pi_ups_halt_low_battery_bb.png?raw=true "Raspberry Pi 3 UPS Halt on Power Loss")
 
 ## PowerBoost 1000C UPS: Safely halt Raspberry Pi when battery is low
 
-This solution uses an Adafruit PowerBoost 1000C as a UPS for the Raspberry Pi. If the supply power is interrupted, the Raspberry Pi is powered by the battery and halts automatically. 
+This solution uses an Adafruit PowerBoost 1000C as a UPS for the Raspberry Pi and the "Halting the Raspberry Pi 3 Script". If the battery's voltage is low, the Raspberry Pi halts automatically. 
 
 ![Raspberry Pi 3 UPS Halt on Low Battery](raspberry_pi_ups_halt_low_battery_bb.png?raw=true "Raspberry Pi 3 UPS Halt on Low Battery")
