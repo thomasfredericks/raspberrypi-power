@@ -36,7 +36,12 @@ pause()    # handle the button presses in the background
 ```
 This code creates an input (with an internal pullup) on GPIO 21. When it is grounded, it executes the system command to halt the Raspberry Pi. GPIO 21 is nice because it's on pin 40 of the 40-pin header and sits right next to a ground connection on pin 39.
 
-Next, we want the code to run at boot. Edit "/etc/rc.local" and add the following line just **before** "exit 0":
+Next, we want the code to run at boot. Edit "/etc/rc.local":
+```
+sudo nano /etc/rc.local
+```
+
+Then add the following line just **before** "exit 0":
 ```
 python /home/pi/shutdown-with-hold.py
 ```
