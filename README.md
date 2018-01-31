@@ -43,7 +43,7 @@ python /home/pi/shutdown-with-hold.py
 
 Reboot the Raspberry Pi.
 
-To test, when the Raspberry Pi on fully booted, touch GPIO 21 to ground for 5 secondes and the Raspberry Pi should start halting.
+To test, when the Raspberry Pi on fully booted, touch GPIO 21 to ground for 6 secondes and the Raspberry Pi should start halting.
 
 
 Source: https://github.com/TonyLHansen/raspberry-pi-safe-off-switch/ by https://github.com/TonyLHansen
@@ -57,6 +57,12 @@ Short pin 5  (GPIO3) to pin 6 (GND) together will wake the Pi up from a halt sta
 An easy way to test this is to shutdown the Pi with sudo shutdown -h now, and connect pins 5 and 6 with a female to female cable. You only need to short them momentarily. Then you should find that the Pi will "awake".
 
 Source: https://howchoo.com/g/mwnlytk3zmm/how-to-add-a-power-button-to-your-raspberry-pi by https://howchoo.com/u/tyler
+
+## Raspberry Pi 3 safe off/on button
+
+You can use simple a single push buttons to toggle a halt and boot:
+
+![Raspberry Pi 3 safe off/on button circuit](raspberry_pi_button_bb.png?raw=true "Raspberry Pi 3 safe off/on button circuit")
 
 ## PowerBoost 1000C UPS: Safely halt Raspberry Pi when power supply is interrupted or disconnected
 
