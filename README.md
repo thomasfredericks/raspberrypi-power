@@ -1,7 +1,12 @@
-# raspberrypi-power
-Scripts and circuits to manage power to the Raspberry Pi 3
+# Raspberry Pi 3 Power Management
 
-## Halting the Raspberry PI 3
+How to turn off and on the Raspberry Pi with buttons and how to use a cheap UPS to protect the Raspberry Pi's memory from power interruptions.
+
+Table of contents:
+1. How to halt (i.e. shutdown) the Raspberry Pi.
+1. How to turn on the Raspberry Pi after halting it.
+
+## Halting the Raspberry Pi 3
 
 Install "gpio-zero" for "Python 2":
 ```
@@ -26,19 +31,21 @@ btn = Button(offGPIO, hold_time=holdTime)
 btn.when_held = shutdown
 pause()    # handle the button presses in the background
 ```
-This code creates a button on GPIO 21, waits for it to be pressed, and then executes the system command to power down the Raspberry Pi. GPIO 21 is nice because it's on pin 40 of the 40-pin header and sits right next to a ground connection on pin 39. This combination makes it difficult for an off switch to get plugged in incorrectly. On a 26-pin header, GPIO 7 is similarly situated at the bottom there on pin 26, next to a ground connection on pin 25.
+This code creates an input (with an internal pullup) on GPIO 21. When it is grounded, it executes the system command to halt the Raspberry Pi. GPIO 21 is nice because it's on pin 40 of the 40-pin header and sits right next to a ground connection on pin 39.
 
 Next, we want the code to run at boot. Edit "/etc/rc.local" and add the following line just **before** "exit 0":
 ```
 python /home/pi/shutdown-with-hold.py
 ```
 
-Reboot the Raspberry PI.
+Reboot the Raspberry Pi.
+
+To test, when the Raspberry Pi on fully booted, touch GPIO 21 to ground for 5 secondes and the Raspberry Pi should start halting.
 
 
 Source: https://github.com/TonyLHansen/raspberry-pi-safe-off-switch/ by https://github.com/TonyLHansen
 
-## Turn on the Raspberry PI 3 after halting it
+## Turn on the Raspberry Pi 3 after halting it
 
 Short pin 5  (GPIO3) to pin 6 (GND) together will wake the Pi up from a halt state.
 
