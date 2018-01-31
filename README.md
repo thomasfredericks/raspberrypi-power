@@ -5,6 +5,7 @@ How to turn off and on the Raspberry Pi with buttons and how to use a cheap UPS 
 Table of contents:
 1. How to halt (i.e. shutdown) the Raspberry Pi.
 1. How to turn on the Raspberry Pi after halting it.
+1. PowerBoost 1000C UPS: Safely halt Raspberry Pi when power supply is interrupted or disconnected
 
 ## Halting the Raspberry Pi 3
 
@@ -56,3 +57,9 @@ Short pin 5  (GPIO3) to pin 6 (GND) together will wake the Pi up from a halt sta
 An easy way to test this is to shutdown the Pi with sudo shutdown -h now, and connect pins 5 and 6 with a female to female cable. You only need to short them momentarily. Then you should find that the Pi will "awake".
 
 Source: https://howchoo.com/g/mwnlytk3zmm/how-to-add-a-power-button-to-your-raspberry-pi by https://howchoo.com/u/tyler
+
+## PowerBoost 1000C UPS: Safely halt Raspberry Pi when power supply is interrupted or disconnected
+
+This solution uses an Adafruit PowerBoost 1000C as a UPS for the Raspberry Pi. If the supply power is interrupted, the Raspberry Pi is powered by the battery and halts automatically. 
+
+
